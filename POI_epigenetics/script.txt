@@ -23,6 +23,12 @@ rownames(GSE135697_exp)<-GSE135697_exp$probe_id
 GSE135697_exp$probe_id<-NULL
 head(GSE135697_exp)
 
+#We will fix the mistakes made by the data provider (2022/11/06)
+#The data provider confused the labels of the control group and the experimental group
+#GI.is control group, GC.is experimental(bPOI) group
+GSE135697_exp<-GSE135697_exp[,c(11:20,1:10)]
+head(GSE135697_exp)
+
 #check data
 max(GSE135697_exp)
 min(GSE135697_exp)
@@ -216,7 +222,7 @@ HCP5_for_limma_c
 HCP5_for_limma<-cbind(HCP5_for_limma_t,HCP5_for_limma_c)
 HCP5_for_limma$t_c_diff<-HCP5_for_limma$t_mean-HCP5_for_limma$c_mean
 HCP5_for_limma
-#According to the original method, the amount of differential expression should be 1.7922488(ASHGA5P052651)
+#According to the original method, the amount of differential expression should be -1.7922488(ASHGA5P052651)
 
 #LIU-ZhanAo completed all modeling and bioinformatics parts
 #All codes are written by LIU-ZhanAo
@@ -238,7 +244,7 @@ HCP5_fit2<-contrasts.fit(HCP5_fit,HCP5_contrasts_fit)
 HCP5_fit2<-eBayes(HCP5_fit2)
 HCP5_limma_result<-topTable(HCP5_fit2,coef = 1,n=Inf,adjust="BH")
 head(HCP5_limma_result)
-#Using our method, the differential expression multiple should be 1.2993616(ASHGA5P052651)
+#Using our method, the differential expression multiple should be -1.2993616(ASHGA5P052651)
 #get location
 hsp_info[hsp_info$hgnc_symbol=="HCP5",]
 hsp_info[hsp_info$hgnc_symbol=="MSH5",]
@@ -247,7 +253,7 @@ abs(((31463170+31478936)/2)-((31739677+31762676)/2))
 #HCP5-YB1-MSH5
 #Prediction.Score:8.23
 #Prediction.z.Score:-1.09
-#logFC 1.2993616
+#logFC -1.2993616
 #distance 280123.5
 
 #data merge
@@ -319,3 +325,6 @@ lnc_RBP_target_bind_sel
 
 #'lnc_RBP_target_bind_sel' is the potential pathogenic combination screened by our original method
 #We decided to carry out validation experiments on SALRNA1-TF-C14orf39
+
+
+
