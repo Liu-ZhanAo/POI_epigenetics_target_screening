@@ -1,0 +1,24 @@
+Location,Phenotype,Inheritance,Phenotype mapping key,Phenotype MIM number,Gene/Locus,Gene/Locus MIM number
+1p31.1,Premature ovarian failure 20,AR,3,619938,MSH4,602105
+1p22.2,Premature ovarian failure 9,AR,3,615724,HFM1,615684
+2p13.3,Premature ovarian failure 6,AD,3,612310,FIGLA,608697
+3q22.3,Premature ovarian failure 3,AD,3,608996,FOXL2,605597
+5q31.1,?Premature ovarian failure 14,AR,3,618014,GDF9,601918
+6p21.33,?Premature ovarian failure 13,AR,3,617442,MSH5,603382
+7q22.1,Premature ovarian failure 8,AR,3,615723,STAG3,608489
+7q35,Premature ovarian failure 5,AD,3,611548,NOBOX,610934
+7q36.1,?Premature ovarian failure 17,AR,3,619146,XRCC2,600375
+9q33.3,Adrenocortical insufficiency,AD,3,612964,NR5A1,184757
+9q33.3,Premature ovarian failure 7,AD,3,612964,NR5A1,184757
+10q11.23,Premature ovarian failure 11,AD,3,616946,ERCC6,609413
+10q26.3,?Premature ovarian failure 12,AR,3,616947,SYCE1,611486
+14q21.2,?Premature ovarian failure 15,AR,3,618096,FANCM,609644
+14q23.1,?Premature ovarian failure 18,AR,3,619203,C14orf39,617307
+15q25.2,?Premature ovarian failure 16,AD,3,618723,BNC1,601930
+20p12.3,?Premature ovarian failure 10,AR,3,612885,MCM8,608187
+21q22.3,Premature ovarian failure 19,AR,3,619245,HSF2BP,604554
+Xp11.22,Ovarian dysgenesis 2,XL,3,300510,BMP15,300247
+Xp11.22,Premature ovarian failure 4,XL,3,300510,BMP15,300247
+Xq21.1,?Premature ovarian failure 2B,XLR,3,300604,FLJ22792,300603
+Xq21.33,?Premature ovarian failure 2A,XLD,3,300511,DIAPH2,300108
+Xq27.3,Premature ovarian failure 1,XL,3,311360,FMR1,309550
